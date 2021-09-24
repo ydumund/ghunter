@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    background-image: url(../img/9.JPG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(42, 42, 42, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.signup h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.signup .signup_box {
+    position: relative;
+    width: 100%;
+}
+
+.signup .submitBtn {
+    position: relative;
+    width: 100%;
+    height: 46px;
+}
+
+.signup .signup_box input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 5px 0 0 0;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 3px solid #fff;
+    background-color: transparent;
+    line-height: 21px;
+}
+
+.signup .signup_box label {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.signup .signup_box input:focus+label,
+.signup .signup_box input:valid+label {
+    top: -21px;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    background-color: rgba(42, 42, 42, 0.8);
+    border: none;
+    position: absolute;
+    padding: 10px 20px;
+    color: #03E9F4;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 1s ease;
+    font-family: sensei, kuaile;
+}
+
+button:hover {
+    color: #fff;
+    border-radius: 10px;
+    background-color: #03E9F4;
+    font-size: 21px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4, 0 0 200px #03e9f4;
+}

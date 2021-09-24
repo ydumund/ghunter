@@ -1,0 +1,170 @@
+.welcome h1{
+    font-size: 80px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+}
+.dividingline { 
+    margin: auto;
+    margin-bottom: 30px;
+    height:10px;
+    width: 550px;
+    border:none;
+    border-bottom:10px solid #0084ff;
+    border-radius: 5px;
+}  
+#introduce{
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 1.3em;
+    width: 100%;
+    height: 100px;
+}
+.video iframe {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.idea{
+    text-align: center;
+}
+.idea h2{
+    position: relative;
+    font-size: 3em;
+}
+.idea h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    width: 180px;
+    background: #00aeff;
+}
+.idea p{
+    font-family: sans-serif;
+    font-size: 1.3em;
+}
+@media (min-width: 1200px){
+    .cardcontainer {
+    justify-content: center;
+    } 
+}
+@media (min-width: 1600px){
+    .cardcontainer {
+    width: 1600px;
+    }
+}
+@media (min-width: 1200px){
+    .cardcontainer {
+    width: 1152px;
+    }
+}
+.cardcontainer{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 56px;
+    width: 768px;
+}
+@media (min-width: 1600px){
+    .card1 {
+    margin: 20px;
+    }
+}
+.card1{
+    margin: 12px;
+    height: 440px;
+    width: 360px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: auto;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.card1 #secondView{
+    display: none; 
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+.card1 #secondView a{
+    position: relative;
+    font-size: 2em;
+    text-decoration: none;
+    color: inherit;
+}
+.card1 #secondView p{
+    margin-top: 20px;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    text-indent: 40px;
+}
+.card1:hover #secondView{
+    display: block;
+}
+.card1 #firstView{
+    position: absolute;
+    font-size: 2em;
+    width: 100%;
+    bottom: 50px;
+    overflow: auto;
+    text-align: center;
+}
+.card1:hover #firstView{
+    display: none;
+}
+.card1 #firstView::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    width: 120px;
+    background: #00aeff; 
+}
+.card1 #secondView a::after {
+    content: "";
+    position: absolute;
+    left: 35%;
+    transform: translateX(-35%);
+    bottom: 0;
+    height: 2px;
+    width: 120px;
+    background: #00aeff; 
+}
+.joinUs{
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 400px;
+    font-family: sans-serif;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.joinUs p{
+    font-size: 2em;
+}
+.joinUs a{
+    background-color: rgb(143, 166, 185);
+    border: solid 1px #e8f2f7;
+    padding: 10px 35px;
+    text-decoration: none;
+    color: #e8f2f7;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.joinUs a:hover{
+    background-color: #4f4deb;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

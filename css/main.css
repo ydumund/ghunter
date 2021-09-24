@@ -1,0 +1,181 @@
+@font-face {
+    font-family: sensei;
+    src: url(../fonts/Sensei-Medium.ttf);
+}
+
+@font-face {
+    font-family: kuaile;
+    src: url(../fonts/ZCOOLKuaiLe-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(../fonts/fontawesome-webfont.ttf);
+}
+
+@font-face {
+    font-family: zpix;
+    src: url(../fonts/zpix.ttf);
+}
+
+body {
+    color: #ccc;
+    background-color: #000;
+    font-family: zpix,sensei, kuaile;
+    text-shadow: 2px 2px 4px #000000;
+}
+#topContainer {
+    width: 100%;
+    height: 5vh;
+    background: #2a2a2a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 2px 2px 4px #000000;
+}
+#topContainer #left,
+#topContainer #right {
+    width: 20%;
+}
+#topContainer #left,
+#topContainer #right,
+#topContainer #center {
+    float: left;
+    height: 5vh;
+}
+#topContainer #center {
+    width: 60%;
+}
+#topContainer #left img {
+    height: 100%;
+}
+#topContainer .navUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#topContainer .navLi {
+    display: inline;
+    float: left;
+    height: 100%;
+    transition: border-bottom 0.5s linear;
+}
+#topContainer .navLi:hover {
+    border-bottom: solid #0067fa 5px;
+}
+#topContainer .navLi a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    font-family: sensei, kuaile;
+    font-size: 1.2em;
+    line-height: 5vh;
+    padding: 0px 25px 0px 25px;
+}
+#topContainer .navLi a:hover {
+    color: #ffffff;
+}
+#mainContainer {
+    clear: both;
+    height: 95vh;
+    background: #ffffff;
+}
+#mainContainer .recommand {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    height: 95vh;
+    width: 25%;
+    position: relative;
+}
+#mainContainer .recContainer {
+    width: 100%;
+    height: 100%;
+}
+#mainContainer .recommand img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#mainContainer .recommand .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    background-color: #000;
+}
+#mainContainer .recommand:hover .overlay {
+    opacity: 0.8;
+}
+#mainContainer .recommand .text {
+    color: #ccc;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#footer {
+    background: #2a2a2a;
+    width: 100%;
+    clear: both;
+    height: 400px;
+}
+#footer #f-up {
+    height: 300px;
+    width: 90%;
+    margin: auto;
+}
+#footer #f-up #socialLinks .socialLink {
+    line-height: 100px;
+    margin-right: 50px;
+    font-size: 32px;
+    color: #ccc;
+    transition: color 1s;
+}
+#footer #f-up #socialLinks .socialLink:hover {
+    color: #0067fa;
+}
+#footer #f-up #resources {
+    overflow: auto;
+}
+#footer #f-up #resources h6 {
+    color: #ccc;
+}
+#footer #f-up #resources .resource {
+    float: left;
+    width: 200px;
+}
+#footer #f-up #resources ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+#footer #f-up #resources ul li {
+    height: 24px;
+}
+#footer #f-up #resources ul li a {
+    line-height: 24px;
+    text-decoration: none;
+    color: #ccc;
+    transition: color 1s, font-size 1s;
+}
+#footer #f-up #resources ul li a:hover {
+    color: #0067fa;
+    font-size: 1.2em;
+}
+#footer #f-down {
+    clear: both;
+    height: 100px;
+    width: 90%;
+    margin: auto;
+}
+#footer #f-down #copyright {
+    line-height: 100px;
+}
